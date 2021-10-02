@@ -1,3 +1,3 @@
-echo 'web: heroku-php-apache2 web/' > Procfile
+echo 'vendor/bin/heroku-php-apache2 public/'
 git add Procfile
 git commit -m "Heroku Procfile"
