@@ -46,6 +46,11 @@ class Officine
      */
     private $chambreFroides;
 
+    /**
+     * @ORM\Column(type="string", length=100, nullable=true, unique="true")
+     */
+    private $custom_identifiant;
+
     public function __construct()
     {
         $this->chambreFroides = new ArrayCollection();
@@ -130,6 +135,18 @@ class Officine
                 $chambreFroide->setOfficine(null);
             }
         }
+
+        return $this;
+    }
+
+    public function getCustomIdentifiant(): ?string
+    {
+        return $this->custom_identifiant;
+    }
+
+    public function setCustomIdentifiant(?string $custom_identifiant): self
+    {
+        $this->custom_identifiant = $custom_identifiant;
 
         return $this;
     }
