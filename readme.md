@@ -38,6 +38,8 @@ Vous pouvez alors lancer le serveur symfony avec :
 
 Losque votre navigateur ouvrira une nouvelle page en localhost, ajoutez /api à l'url pour accéder au gestionnaire de l'api => api platform.
 
+Cette API donne les données que une autre application reprend et gère (https://github.com/leeroynico/ECF-front).
+
 ## déploiement :
 
 Vous pouvez utiliser heroku, après avoir créer un compte (https://signup.heroku.com), installer heroku sur votre machine :
