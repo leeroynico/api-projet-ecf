@@ -22,14 +22,21 @@ Ensuite, installer toutes les dépendances nécessaires au bon fonctionnement de
 
 Pour les accés à la base de données, soit vous utilisez la base de données distante qui contient déjà des données (le projet est configuré de base come ceci) Soit vous pouvez utiliser une bdd en local. Il faut alors commenter la ligne 27 du .env et décommenter la ligne 26 puis crééer la base de donnée avec
 
-- php bin/console doctrine:database:create puis éxécuter les migrations à l'aide de
-  php bin/console doctrine:migrations:migrate
+- php bin/console doctrine:database:create
+
+puis éxécuter les migrations à l'aide de
+
+- php bin/console doctrine:migrations:migrate
+
+Ne reste plus qu'à alimenter la base de donnée en lançant les fixtures :
+
+- symfony console doctrine:fixtures:load
 
 Vous pouvez alors lancer le serveur symfony avec :
 
 - symfony start
 
-Losque votre navigateur ouvrira une nouvelle page en lcoalhost, ajoutez /api à l'url pour accéder au gestionnaire de l'api => api platform.
+Losque votre navigateur ouvrira une nouvelle page en localhost, ajoutez /api à l'url pour accéder au gestionnaire de l'api => api platform.
 
 ## déploiement :
 
