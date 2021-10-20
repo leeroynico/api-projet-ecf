@@ -2,17 +2,17 @@
 
 ## Description :
 
-Dans le cadre d'une évaluation lors de ma formation de dev Full stack, j'ai réalisé cette application qui permet de fournir un API pour gérer les données de température et d'hygrométrie pour des officines (fictives). Cette API fournit toutes les informations de donneés ainsi que celles des utilisateurs.
+Dans le cadre d'une évaluation lors de ma formation de dev Full stack, j'ai réalisé cette application qui permet de fournir juste l'API pour gérer les données de température et d'hygrométrie pour des officines (fictives). Cette API fournit toutes les informations de donneés ainsi que celles des utilisateurs.
 
 ## installation en local :
 
-Ce projet est réalisé à partir de symfony (v17.0.2).
+Ce projet est réalisé à partir de symfony.
 Pour le récupérer, effecutez les commandes suivantes (dans votre console, en vous plaçant sur le dossier de travail dans lequel vous voulez importer le projet, et en prenant soin d'installer git sur votre machine)
 
 - git init
 - git clone git@github.com:leeroynico/api-projet-ecf.git
 
-Listez et vériifer que vous êtes bien placés sur la branche master
+Listez et vérifier que vous êtes bien placés sur la branche master
 
 - git branch
 
@@ -20,7 +20,7 @@ Ensuite, installer toutes les dépendances nécessaires au bon fonctionnement de
 
 - composer install
 
-Pour les accés à la base de données, soit vous utilisez la base de données distante qui contient déjà des données (le projet est configuré de base come ceci) Soit vous pouvez utiliser une bdd en local. Il faut alors commenter la ligne 27 du .env et décommenter la ligne 26 puis crééer la base de donnée avec
+Pour les accés à la base de données, soit vous utilisez la base de données distante qui contient déjà des données (le projet est configuré de base come ceci). Soit vous pouvez utiliser une bdd en local. Il faut alors commenter la ligne 27 du .env et décommenter la ligne 26 puis crééer la base de donnée avec
 
 - php bin/console doctrine:database:create
 

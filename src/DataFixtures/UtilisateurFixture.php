@@ -29,7 +29,7 @@ class UtilisateurFixture extends Fixture
         /** AJOUTER UNE OFFICINE **/
         $officine = new Officine();
         $officine->setLibelle('pharmacie du centre');
-        $officine->setAdresse('nico');
+        $officine->setAdresse('place de la mairie - LENS');
         $officine->setPassword('$2a$10$BZukITPgky.D5Iv8sHy5S.twQYI11pY6Q5Rd8bxh4NH4xyMvosTq2');
         $officine->setCustomIdentifiant('PHARMA - 62 -10');
         $officine->setTelephone('0321151515');
