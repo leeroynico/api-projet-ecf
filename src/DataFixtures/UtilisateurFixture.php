@@ -4,6 +4,7 @@ namespace App\DataFixtures;
 
 use App\Entity\ChambreFroide;
 use App\Entity\Officine;
+use App\Entity\User;
 use App\Entity\Utilisateur;
 use Doctrine\Persistence\ObjectManager;
 use Doctrine\Bundle\FixturesBundle\Fixture;
@@ -39,6 +40,13 @@ class UtilisateurFixture extends Fixture
         $chambre_froide->setLibell('chambre-1');
         $chambre_froide->setOfficine($officine);
         $manager->persist($chambre_froide);
+
+        /** AJOUTER UN USER POUR AUTH**/
+        $user = new User();
+        $user->setUsername('admin');
+        $user->setRoles([]);
+        $user->setPassword('$2y$13$SeqdxVQCsxUPiqjSv/PX3u7CIU/DC2CAVa25rw6y9292vR1xVFuC2');
+        $manager->persist($user);
 
         $manager->flush();
     }
